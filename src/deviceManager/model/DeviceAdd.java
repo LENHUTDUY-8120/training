@@ -2,15 +2,23 @@ package deviceManager.model;
 
 public class DeviceAdd {
 
+	private String id;
 	private String name;
-	private String serchkey;
 	private String expiryDate;
 	private String manufacturingDate;
 	private String status;
 	private int price;
-	private String sellDate;
+	private String buyDate;
 	private int warrantyMonth;
 	private int categoryId;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
@@ -18,14 +26,6 @@ public class DeviceAdd {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getSerchkey() {
-		return serchkey;
-	}
-
-	public void setSerchkey(String serchkey) {
-		this.serchkey = serchkey;
 	}
 
 	public String getExpiryDate() {
@@ -60,12 +60,12 @@ public class DeviceAdd {
 		this.price = price;
 	}
 
-	public String getSellDate() {
-		return sellDate;
+	public String getBuyDate() {
+		return buyDate;
 	}
 
-	public void setSellDate(String sellDate) {
-		this.sellDate = sellDate;
+	public void setBuyDate(String buyDate) {
+		this.buyDate = buyDate;
 	}
 
 	public int getWarrantyMonth() {

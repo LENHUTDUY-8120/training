@@ -10,7 +10,7 @@ public class DeviceGet {
 	private Date manufacturingDate;
 	private String status;
 	private int price;
-	private Date sellDate;
+	private Date buyDate;
 	private int warrantyMonth;
 	private int categoryId;
 	private String categoryName;
@@ -63,12 +63,12 @@ public class DeviceGet {
 		this.price = price;
 	}
 
-	public Date getSellDate() {
-		return sellDate;
+	public Date getBuyDate() {
+		return buyDate;
 	}
 
-	public void setSellDate(Date sellDate) {
-		this.sellDate = sellDate;
+	public void setBuyDate(Date buyDate) {
+		this.buyDate = buyDate;
 	}
 
 	public int getWarrantyMonth() {
@@ -98,7 +98,7 @@ public class DeviceGet {
 	@Override
 	public String toString() {
 		return "DeviceGet [id=" + id + ", name=" + name + ", expiryDate=" + expiryDate + ", manufacturingDate="
-				+ manufacturingDate + ", status=" + status + ", price=" + price + ", sellDate=" + sellDate
+				+ manufacturingDate + ", status=" + status + ", price=" + price + ", buyDate=" + buyDate
 				+ ", warrantyMonth=" + warrantyMonth + ", categoryId=" + categoryId + ", categoryName=" + categoryName
 				+ "]";
 	}
